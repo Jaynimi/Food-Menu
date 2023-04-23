@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 10vh 10vw;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-family: "Roboto", sans-serif;
+    margin: 30px 0;
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: #494d5f;
+}
+
+.title h2 {
+    margin-bottom: 15px;
+}
+
+.underline {
+    width: 60%;
+    height: 5px;
+    background-color: #bba362;
+}
+
+.title h2 {
+    font-weight: 900;
+}
+
+.section-center {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.menu-item {
+    width: 80%;
+    margin: 10px 0 30px 0;
+}
+
+.photo {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border: 3px solid #bba362;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.item-info {
+    margin: 3px 0;
+}
+
+.item-info header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: 5px;
+    color: #494d5f;
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.item-info .price {
+    color: #bba362;
+}
+
+.item-text {
+    margin: 15px 0;
+    font-size: 0.9rem;
+    color: #999898;
+}
