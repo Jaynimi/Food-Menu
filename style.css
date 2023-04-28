@@ -7,13 +7,14 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: rgb(238, 242, 255);
 }
 
 .menu {
     display: flex;
     flex-direction: column;
     place-items: center;
-    margin: 10vh 10vw;
+    margin: 5vh 5vw;
 }
 
 .title {
@@ -22,18 +23,18 @@ body {
     place-items: center;
     font-family: "Roboto", sans-serif;
     margin: 30px 0;
-    font-size: 25px;
     letter-spacing: 4px;
     color: #494d5f;
 }
 
 .title h2 {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .underline {
     width: 60%;
-    height: 5px;
+    height: 3px;
     background-color: #bba362;
 }
 
@@ -45,11 +46,14 @@ body {
     display: flex;
     flex-direction: column;
     place-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-item {
-    width: 80%;
+    width: 70%;
     margin: 10px 0 30px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .photo {
@@ -75,6 +79,7 @@ body {
     padding-bottom: 10px;
     margin-bottom: 10px;
     font-size: 0.9rem;
+    text-transform: capitalize;
 }
 
 .item-info .price {
@@ -84,5 +89,94 @@ body {
 .item-text {
     margin: 15px 0;
     font-size: 0.9rem;
-    color: #999898;
+    color: #484e5e;
+}
+
+.btn-container {
+    margin-bottom: 8%;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #bba362;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: #bba362;
+    margin: 0 5px;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #bba362;
+    color: rgb(238, 242, 255);;
+}
+
+@media screen and (max-width: 560px) {
+    button {
+        font-size: 0.8rem;
+        padding: 5px 8px;
+        margin: 0 2px;
+        letter-spacing: 2px;
+    }
+    .btn-container {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    button {
+        font-size: 0.6rem;
+        padding: 3px 6px;
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    .menu-item {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .photo {
+        object-fit: cover;
+        width: 40%;
+        height: 185px;
+        margin-right: 5%;
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .underline {
+        height: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .menu-item {
+        width: 45%;
+        margin: 15px 2%;
+    }
+
+    .section-center {
+        flex-direction: row;
+    }
+
+    .photo {
+        object-fit: cover;
+        width: 40%;
+        height: 150px;
+        margin-right: 5%;
+    }
+
+    .item-info header {
+        letter-spacing: 3px;
+    }
 }
